@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="C:\Users\skghp\Desktop\practice\phase-1\web-development-phase-1\css\bootstrap-4.1.3-dist">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body class="myblog" style="overflow: initial;">
+      <!-- header start-->
+      <nav class="navbar navbar-expand-lg navbar-light mybg bg-light">
+        <a class="navbar-brand"  href="#">We<span class="text-info">b</span>log</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">News</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="edit form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="myBtnContainer">
+        <ul class="nav justify-content-center mt-3">
+            <li class="nav-item">
+             <a class="nav-link active btn active" onclick="filterSelection('html')" aria-current="page" href="html.html">HTML</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link nav-link btn active" onclick="filterSelection('css')" href="css.html">CSS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link btn active" onclick="filterSelection('js')" href="js.html">Javascript</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link btn active" onclick="filterSelection('bootstrap')" href="#">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+           <a class="nav-link btn active" onclick="filterSelection('all')" href="project.html">All</a>
+            </li>
+            
+        </ul>
+     </div>
+     
+    <!-- header end-->
+     <!-- card start-->
+    <section class="section-card-list-columns">
+        <div class="container my-2">
+            <div class="row">
+                          
+                <div class="col-md-6 col-lg-4 my-3">
+                    <div class="shadow-sm card h-100">
+                        <div class="card-img-top">
+                            <img src="images/boots-pic.jpg" alt="responsive design">
+                    </div>
+                    <div class="card-body">
+                        <h6><a href="#"class="badge rounded-pill bg-info text-light">Bootstrap</a></h6>
+                        <h4 class="card-title">The future of responsive design</h4>
+
+                        <div class="card-text mb-1">
+                            <div class="card-text-list">
+                                        
+                                <p>When you think of the term responsive design, what comes to mind? Is it mobile devices versus desktop devices?</p>
+                                        
+                            </div>
+                        </div>
+
+                        <a href="https://developer.ibm.com/technologies/web-development/articles/responsive-design-future/" target="_self" type="button" class="btn btn-info">VIEW</a>
+                                                                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-3">
+                    <div class="shadow-sm card h-100">
+                        <div class="card-img-top">
+                            <img src="images/boots-pic.jpg" alt="Resources for Bootstrap">
+                        </div>
+                        <div class="card-body">
+                            <h6><a href="#"class="badge rounded-pill bg-info text-light">Bootstrap</a></h6>
+                            <h4 class="card-title">20+ Awesome Resources for Bootstrap Lovers</h4>
+                                    
+                                <div class="card-text mb-1">
+                                    <div class="card-text-list">
+                                        
+                                        <p>Bootstrap has simply exploded in the web development community. There will always be skeptics and haters but on the whole, the project has been a smashing success</p>
+                                        
+                                </div>
+                        </div>                                
+                            <a href="https://designshack.net/articles/css/20-awesome-resources-for-twitter-bootstrap-lovers/" target="_self" type="button" class="btn btn-info">VIEW</a>
+                                    
+                                                                
+                        </div>
+                    </div>
+                </div>    
+            </div>
+      </div>
+  </section>
+   <!-- card end-->  
+  
+
+    <footer class="myfooter p-5 mt-4 bg-light text-dark text-center ">
+        <div>
+            <p class="text-dark">Copyright © 2021 weblog.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
