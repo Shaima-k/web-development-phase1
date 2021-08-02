@@ -15,6 +15,10 @@ a {
     color: inherit;
 }
 
+a.btn-info {
+    color: white;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -153,7 +157,7 @@ img {
 }
 
 a.btn.btn-info.ml-2 {
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
 
