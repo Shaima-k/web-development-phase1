@@ -1,0 +1,59 @@
+.admin-wrapper {
+    display: flex;
+    height: calc(100% - 64px);
+}
+
+ul li a.logout {
+    color: red;
+}
+
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 100%;
+    margin: auto;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.publish {
+    color: blue;
+}
+
+.edit:hover,
+.delete:hover,
+.publish:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.button-group {
+    margin: 20px 60px;
+}
